@@ -1,9 +1,9 @@
-kk# 🚀 Proyecto Spring Boot + Docker + PostgreSQL
+kk#  Proyecto Spring Boot + Docker + PostgreSQL
 ### Arquitectura N-Capas — com.sena.test
 
 ---
 
-## 📦 Tecnologías usadas
+##  Tecnologías usadas
 
 - **Java 17**
 - **Spring Boot**
@@ -13,7 +13,7 @@ kk# 🚀 Proyecto Spring Boot + Docker + PostgreSQL
 
 ---
 
-## 🐳 Docker — Configuración del contenedor
+##  Docker — Configuración del contenedor
 
 ### `docker-compose.yml`
 
@@ -36,7 +36,7 @@ volumes:
   pgdata:
 ```
 
-### Comandos útiles
+### Comandos 
 
 ```bash
 # Levantar el contenedor
@@ -55,11 +55,11 @@ docker exec -it postgres_sena psql -U admin -d testdb
 \q
 ```
 
-> ⚠️ Se usa el puerto **5433** porque el 5432 estaba ocupado por PostgreSQL local.
+>  Se usa el puerto **5433** porque el 5432 estaba ocupado por PostgreSQL local.
 
 ---
 
-## ⚙️ Spring Boot — Configuración
+##  Spring Boot — Configuración
 
 ### `application.properties`
 
@@ -99,7 +99,7 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
 
 ---
 
-## 🏗️ Arquitectura N-Capas
+##  Arquitectura N-Capas
 
 ```
 com.sena.test
@@ -128,7 +128,7 @@ com.sena.test
 
 ---
 
-## 🗃️ Entidades
+##  Entidades
 
 ### Person
 | Campo | Tipo | Descripción |
@@ -157,7 +157,7 @@ com.sena.test
 
 ---
 
-## 🌐 Endpoints disponibles
+##  Endpoints disponibles
 
 ### Person
 | Método | URL | Descripción |
@@ -186,11 +186,11 @@ com.sena.test
 | PUT | `/api/role/{id}` | Actualizar |
 | DELETE | `/api/role/{id}` | Eliminar |
 
-> 🌍 La app corre en: `http://localhost:8080`
+>  La app corre en: `http://localhost:8080`
 
 ---
 
-## ✅ Estado del proyecto
+##  Estado del proyecto
 
 - [x] Contenedor Docker creado y corriendo
 - [x] Base de datos `testdb` creada
